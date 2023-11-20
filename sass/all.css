@@ -189,7 +189,7 @@ nav .container {
 }
 nav .container h1 {
   margin-left: 16px;
-  background-image: url("../../assets/logo_w(null).svg");
+  background-image: url("../assets/logo_w(null).svg");
   background-repeat: no-repeat;
 }
 nav .container h1 a {
@@ -276,7 +276,7 @@ nav .container .navbar li a {
 }
 
 .banner {
-  background: url("../../assets/header_desktop.png"), radial-gradient(ellipse, #150303, #000000);
+  background: url("../assets/header_desktop.png"), radial-gradient(ellipse, #150303, #000000);
   background-repeat: no-repeat;
   background-position: center center;
   height: 420px;
@@ -286,7 +286,7 @@ nav .container .navbar li a {
 }
 @media screen and (max-width: 576px) {
   .banner {
-    background: url("../../assets/header_mobile.png");
+    background: url("../assets/header_mobile.png");
   }
 }
 .banner .banner-content {
@@ -368,7 +368,7 @@ footer .container {
 
 .footer-link .logo {
   display: block;
-  background-image: url("../../assets/logo_l@svg.svg");
+  background-image: url("../assets/logo_l@svg.svg");
   background-repeat: no-repeat;
   text-indent: 110%;
   white-space: nowrap;

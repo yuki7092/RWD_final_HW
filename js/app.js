@@ -12,4 +12,8 @@ $(function () {
       $(this).removeClass("fa-beat");
     },
   });
+
+  $(window).scroll(() => {
+    console.log("HI");
+  });
 });
