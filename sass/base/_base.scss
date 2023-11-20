@@ -1,0 +1,28 @@
+$header-text: white;
+$light-text: #efe9e7;
+$dark-text: #3d1101;
+$button-submit: #f56c23;
+$button-cancel: #00000059;
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  @media screen and (max-width: 768px) {
+    max-width: 540px;
+  }
+  @media screen and (max-width: 576px) {
+    max-width: 301px;
+  }
+}
