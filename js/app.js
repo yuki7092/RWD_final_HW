@@ -14,6 +14,13 @@ $(function () {
   });
 
   $(window).scroll(() => {
-    console.log("HI");
+    const srcollPos = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const feedbackPos = $(".feedback .container").offset().top;
+
+    if (srcollPos + windowHeight / 1.5 >= feedbackPos) {
+      $(".feedback-content").addClass("fadeIn");
+      console.log(123);
+    }
   });
 });

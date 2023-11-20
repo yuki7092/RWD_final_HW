@@ -192,6 +192,11 @@ nav .container h1 {
   background-image: url("../assets/logo_w(null).svg");
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  nav .container h1 {
+    margin-left: 0;
+  }
+}
 nav .container h1 a {
   width: 120px;
   height: 24px;
@@ -533,36 +538,39 @@ button {
 .index .feedback h3 {
   margin-bottom: 51px;
 }
-.index .feedback ul {
+.index .feedback .feedback-content {
+  transition: 1.5s ease;
   display: flex;
   justify-content: space-around;
+  opacity: 0;
+  transform: translateY(50px);
 }
 @media screen and (max-width: 768px) {
-  .index .feedback ul {
+  .index .feedback .feedback-content {
     flex-direction: column;
   }
 }
-.index .feedback ul li {
+.index .feedback .feedback-content li {
   display: flex;
   width: 31%;
 }
 @media screen and (max-width: 768px) {
-  .index .feedback ul li {
+  .index .feedback .feedback-content li {
     width: 100%;
   }
 }
-.index .feedback ul li img {
+.index .feedback .feedback-content li img {
   border-radius: 50%;
   width: 67px;
   height: 67px;
 }
-.index .feedback ul li .feedback-content {
+.index .feedback .feedback-content li .recommend {
   margin-left: 13px;
 }
-.index .feedback ul li h4 {
+.index .feedback .feedback-content li h4 {
   margin: 22px 0;
 }
-.index .feedback ul li p:nth-of-type(2) {
+.index .feedback .feedback-content li p:nth-of-type(2) {
   margin-top: 16px;
   text-align: end;
 }
@@ -612,6 +620,11 @@ button {
 }
 .index .reserve .reserve-content form .form-button button:nth-of-type(2) {
   background-color: #f56c23;
+}
+
+.index ul.feedback-content.fadeIn {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .login {

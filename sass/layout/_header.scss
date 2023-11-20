@@ -24,6 +24,10 @@ nav {
       margin-left: 16px;
       background-image: url("../assets/logo_w\(null\).svg");
       background-repeat: no-repeat;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+      }
       a {
         width: 120px;
         height: 24px;

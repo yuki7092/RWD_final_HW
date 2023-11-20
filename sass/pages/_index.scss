@@ -93,6 +93,7 @@
       .chef-info {
         width: 50%;
         padding: 80px 0;
+
         @media screen and (max-width: 768px) {
           width: 100%;
           padding: 30px 0;
@@ -123,16 +124,19 @@
       margin-bottom: 51px;
     }
 
-    ul {
+    .feedback-content {
+      transition: 1.5s ease;
       display: flex;
       justify-content: space-around;
+      opacity: 0;
+      transform: translateY(50px);
+
       @media screen and (max-width: 768px) {
         flex-direction: column;
       }
 
       li {
         display: flex;
-
         width: 31%;
         @media screen and (max-width: 768px) {
           width: 100%;
@@ -144,7 +148,7 @@
           height: 67px;
         }
 
-        .feedback-content {
+        .recommend {
           margin-left: 13px;
         }
         h4 {
@@ -204,4 +208,8 @@
       }
     }
   }
+}
+.index ul.feedback-content.fadeIn {
+  opacity: 1;
+  transform: translateY(0px);
 }
